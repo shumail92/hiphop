@@ -3,6 +3,8 @@ import { NgModule } from '@angular/core';
 import { DashboardHelperComponent } from './components/dashboard-helper/dashboard-helper.component';
 import { DashboardNeedyComponent } from './components/dashboard-needy/dashboard-needy.component';
 import { MapComponent } from './components/map/map.component';
+import { LoginComponent } from './components/login/login.component';
+
 
 const appRoutes: Routes = [
   {
@@ -16,7 +18,12 @@ const appRoutes: Routes = [
   {
     path: 'map',
     component: MapComponent
+  },
+  {
+    path: 'login',
+    component: LoginComponent
   }
+
 ];
 
 @NgModule({

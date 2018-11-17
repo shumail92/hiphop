@@ -7,13 +7,15 @@ import { DashboardNeedyComponent } from './components/dashboard-needy/dashboard-
 import { AppRoutingModule } from './app-routing.module';
 import { MapComponent } from './components/map/map.component';
 import { AgmCoreModule} from '@agm/core';
+import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DashboardHelperComponent,
     DashboardNeedyComponent,
-    MapComponent
+    MapComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
