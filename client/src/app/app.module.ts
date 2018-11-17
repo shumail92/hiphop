@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { DashboardHelperComponent } from './components/dashboard-helper/dashboard-helper.component';
 import { DashboardNeedyComponent } from './components/dashboard-needy/dashboard-needy.component';
@@ -22,7 +22,8 @@ import { LoginComponent } from './components/login/login.component';
     AppRoutingModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAMvIYdGx_M_RF4zc2FyirOegr7284xcvc'
-    })
+    }),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

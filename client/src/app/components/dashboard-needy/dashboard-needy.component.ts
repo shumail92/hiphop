@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {Order} from '../../order';
 
 @Component({
   selector: 'app-dashboard-needy',
@@ -7,7 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardNeedyComponent implements OnInit {
 
-  constructor() { }
+  order: Order;
+
+  calculate_cost(): void {
+    this.order.commission = this.order.distance / 10;
+    this.order.total_price = (this.order.quantity * this.order.unit_price) + this.order.commission;
+  }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }
