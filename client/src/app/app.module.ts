@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { MapComponent } from './components/map/map.component';
 import { AgmCoreModule} from '@agm/core';
 import { LoginComponent } from './components/login/login.component';
+import { RegisteruserComponent } from './components/registeruser/registeruser.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { LoginComponent } from './components/login/login.component';
     DashboardHelperComponent,
     DashboardNeedyComponent,
     MapComponent,
-    LoginComponent
+    LoginComponent,
+    RegisteruserComponent
   ],
   imports: [
     BrowserModule,

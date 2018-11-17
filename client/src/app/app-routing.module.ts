@@ -4,6 +4,7 @@ import { DashboardHelperComponent } from './components/dashboard-helper/dashboar
 import { DashboardNeedyComponent } from './components/dashboard-needy/dashboard-needy.component';
 import { MapComponent } from './components/map/map.component';
 import { LoginComponent } from './components/login/login.component';
+import { RegisteruserComponent } from './components/registeruser/registeruser.component';
 
 
 const appRoutes: Routes = [
@@ -22,7 +23,12 @@ const appRoutes: Routes = [
   {
     path: 'login',
     component: LoginComponent
+  },
+  {
+    path: 'register',
+    component: RegisteruserComponent
   }
+
 
 ];
 
