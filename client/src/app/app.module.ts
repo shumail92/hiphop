@@ -8,6 +8,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { MapComponent } from './components/map/map.component';
 import { AgmCoreModule} from '@agm/core';
 import { LoginComponent } from './components/login/login.component';
+import { GooglePlaceModule } from 'ngx-google-places-autocomplete';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { LoginComponent } from './components/login/login.component';
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyAMvIYdGx_M_RF4zc2FyirOegr7284xcvc'
     }),
-    FormsModule
+    GooglePlaceModule,
+    FormsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
